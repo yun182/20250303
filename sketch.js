@@ -25,7 +25,7 @@ function setup() {
   dropdown.position(button.x + button.width + 10, 10); // 設定下拉式選單的位置
   dropdown.size(200, 50); // 設定下拉式選單的大小
   dropdown.option('淡江教科');
-  dropdown.option('淡江筆記');
+  dropdown.option('測驗題');
   dropdown.option('淡江大學');
   dropdown.changed(goToWeek); // 設定選單變更事件
   
@@ -85,8 +85,8 @@ function goToWeek() {
   let week = dropdown.value();
   if (week === '淡江教科') {
     iframe.attribute('src', 'https://www.et.tku.edu.tw/');
-  } else if (week === '淡江筆記') {
-    iframe.attribute('src', 'https://hackmd.io/@D3mx6dr9R3SRevjHAg9MDA/rJzXcKMs1l');
+  } else if (week === '測驗題') {
+    iframe.attribute('src', 'https://yun182.github.io/0310/');
   } else if (week === '淡江大學') {
     iframe.attribute('src', 'https://www.tku.edu.tw/');
   }
